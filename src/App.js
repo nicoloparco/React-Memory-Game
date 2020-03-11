@@ -4,18 +4,18 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <div className="row d-flex mx-auto">
+          <div className="col-4">
+            <img className="rounded mx-auto headingImgs" src="./images/Season7.jpg" alt="Sunny Logo"></img>
+          </div>
+          <div className="col-4">
+            <img className="rounded mx-auto headingImgs" src="./images/Sunny-Title.png" alt="Sunny Logo"></img>
+          </div>
+          <div className="col-4">
+            <img className="rounded mx-auto headingImgs" src="./images/Season13.jpg" alt="Sunny Logo"></img>
+          </div>
+        </div>
       </header>
     </div>
   );
