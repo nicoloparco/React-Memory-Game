@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "name": "Dennis-1",
+        "image": "./images/Dennis-Dart.jpg",
+        "clicked": false
+    },
+    {
+        "id": 2,
+        "name": "Dennis-2",
+        "image": "./images/Dennis-Face-Peel.png",
+        "clicked": false
+    },
+    {
+        "id": 3,
+        "name": "Mac-1",
+        "image": "./images/Mac-Fat.jpeg",
+        "clicked": false
+    },
+    {
+        "id": 4,
+        "name": "Mac-4",
+        "image": "./images/Mac-Nightman.jpeg",
+        "clicked": false
+    },
+    {
+        "id": 5,
+        "name": "Charlie-1",
+        "image": "./images/Charlie-Paint.jpg",
+        "clicked": false
+    },
+    {
+        "id": 6,
+        "name": "Charlie-2",
+        "image": "./images/Charlie-Pepe.png",
+        "clicked": false
+    },
+    {
+        "id": 7,
+        "name": "Frank-1",
+        "image": "./images/Frank-Eating.jpg",
+        "clicked": false
+    },
+    {
+        "id": 8,
+        "name": "Frank-2",
+        "image": "./images/Frank-Ongo.jpg",
+        "clicked": false
+    },
+    {
+        "id": 9,
+        "name": "Dee-1",
+        "image": "./images/Dee-Given-Up.jpg",
+        "clicked": false
+    },
+    {
+        "id": 10,
+        "name": "Dee-2",
+        "image": "./images/Dee-Surprised.jpg",
+        "clicked": false
+    },
+    {
+        "id": 11,
+        "name": "Cricket-1",
+        "image": "./images/Cricket-1.jpg",
+        "clicked": false
+    },
+    {
+        "id": 12,
+        "name": "Cricket-2",
+        "image": "./images/Cricket-2.png",
+        "clicked": false
+    },
+    {
+        "id": 13,
+        "name": "Artemis",
+        "image": "./images/Artemis.jpg",
+        "clicked": false
+    },
+    {
+        "id": 14,
+        "name": "Waitress",
+        "image": "./images/Waitress.jpg",
+        "clicked": false
+    }
+]
