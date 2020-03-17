@@ -48,6 +48,27 @@ class App extends Component {
     this.setState({ currentScore });
     this.setState({ characters });
   }
+
+  continuePlay(clickedMatch) {
+    
+    shake = {}
+    clickedMatch[0].clicked = true;
+    currentScore ++;
+    clickMessage = "Correct! Guess Again"
+
+    if(currentScore > bestScore){
+      bestScore = currentScore;
+      this.setState({ topScore })
+    }
+
+    characters.sort(function(a,b) {
+      return 0.5 - Math.random()
+    });
+
+    this.setState({ characters });
+    this.setState({ currentScore });
+    this.setState({ clickMessage })
+  }
   
   render() {
     
