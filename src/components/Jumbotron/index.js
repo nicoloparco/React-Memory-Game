@@ -20,7 +20,7 @@ function Jumbotron() {
               The Gang's All Here
             </h5>
             <h5 className="text-center">
-              Click an image to earn points but don't click the same image twice
+              Click on an image to earn points but don't click the same image twice
             </h5>
           </div>
           <div className="col-md-4 my-3">
