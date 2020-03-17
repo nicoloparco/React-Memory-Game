@@ -7,7 +7,7 @@ function Jumbotron() {
         <div className="row d-flex mx-auto">
           <div className="col-md-4 my-3">
             <img
-              className="rounded mx-auto shadow-lg jumbotronImgs"
+              className="rounded mx-auto shadow-lg jumbotronImg"
               src="./images/Season7.jpg"
               alt="Sunny Logo"
             ></img>
@@ -26,7 +26,7 @@ function Jumbotron() {
           </div>
           <div className="col-md-4 my-3">
             <img
-              className="rounded shadow-lg jumbotronImgs"
+              className="rounded shadow-lg jumbotronImg"
               src="./images/Season13.jpg"
               alt="Sunny Logo"
             ></img>
