@@ -9,8 +9,8 @@ class App extends Component {
   
   state = {
     characters,
-    topScore: 0,
-    currentScore: 0,
+    topScore,
+    currentScore,
     clickMessage
   }
 
@@ -34,6 +34,20 @@ class App extends Component {
     }
   };
 
+  gameOver() {
+    shake = {
+      animation: "shake .5s .0125s"
+    }
+    currentScore = 0;
+    clickMessage = "Game Over, You Lose"
+    characters.map((character, i) => {
+      return characters[i].clicked = false;
+    })
+
+    this.setState({ clickMessage });
+    this.setState({ currentScore });
+    this.setState({ characters });
+  }
   
   render() {
     
