@@ -3,7 +3,7 @@ import Card from "../Card"
 
 function CardContainer() {
     return(
-        <div className="container">
+        <div className="container-fluid">
             <div className="row">
                 <Card />
                 <Card />
