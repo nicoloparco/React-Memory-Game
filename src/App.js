@@ -8,41 +8,32 @@ import characters from "./cards.json"
 class App extends Component {
   
   state = {
-    characters: characters,
+    characters,
     topScore: 0,
-    currentScore:0,
-    selectedCharacters: []
+    currentScore: 0,
+    clickMessage
   }
 
   componentDidMount(){
 
   }
-
-  shuffleCharacters = () =>{
-    const ordered = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
-    const shuffled = [];
-    let chosen, random;
-
-    while(ordered.length > 0){
-      random = Math.floor(Math.random() * (ordered.length));
-      chosen = ordered.splice(random, 1)[0];
-      shuffled.unshift(chosen);
-    }
-    return shuffled;
-  }
   
-
   selectCharacter = id => {
-    this.state.selectedCharacters.push(id);
+    
+    const characters = this.state.characters;
+    const clickedMatch = characters.filter(character => character.id === id)
 
-    const shuffle = this.shuffleCharacters();
-    const characters = this.state.characters.map((character, i) => {
-      return this.state.characters.find(card => card.id === shuffle[i])
-    })
-    this.setState({currentScore: this.state.currentScore + 1})
-    this.setState({characters: characters})
+    if(clickedMatch[0].clicked){
+      this.gameOver();
+    } 
+    else if(currentScore < 14) {
+      this.continuePlay(clickedmatch)
+    } 
+    else {
+      this.winGame(clickedMatch)
+    }
+  };
 
-  }
   
   render() {
     
