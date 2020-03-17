@@ -3,12 +3,12 @@ import './App.css';
 import Navbar from "./components/Navbar";
 import Jumbotron from "./components/Jumbotron"
 import Card from "./components/Card";
-import cards from "./cards.json"
+import characters from "./cards.json"
 
 class App extends Component {
   
   state = {
-    characters: cards,
+    characters: characters,
     topScore: 0,
     currentScore:0,
     selectedCharacters: []
@@ -18,26 +18,34 @@ class App extends Component {
 
   }
 
-  rearrangeCharacters = array => {
-    for(let i = array; i < array.length - 1; i--){
-        let j = Math.floor(Math.random() * (i+1));
-        [array[i], array[j]] = [array[j], array[i]];
+  shuffleCharacters = () =>{
+    const ordered = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+    const shuffled = [];
+    let chosen, random;
+
+    while(ordered.length > 0){
+      random = Math.floor(Math.random() * (ordered.length));
+      chosen = ordered.splice(random, 1)[0];
+      shuffled.unshift(chosen);
     }
+    return shuffled;
   }
+  
 
   selectCharacter = id => {
     this.state.selectedCharacters.push(id);
 
-    const shuffle = this.shuffleCards();
-    const characters = this.state.map((character, i) => {
+    const shuffle = this.shuffleCharacters();
+    const characters = this.state.characters.map((character, i) => {
       return this.state.characters.find(card => card.id === shuffle[i])
     })
-    this.setState({characters})
+    this.setState({currentScore: this.state.currentScore + 1})
+    this.setState({characters: characters})
 
   }
   
   render() {
-    console.log(this.state.characters)
+    
     return (
       <div className="App">
         <Navbar />
