@@ -13,9 +13,6 @@ class App extends Component {
     currentScore: 0
   }
   
-  
-  
-  
   render() {
     console.log(this.state.characters)
     return (
@@ -24,18 +21,13 @@ class App extends Component {
         <Jumbotron />
         <div className="container-fluid">
             <div className="row">
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
+              {this.state.characters.map(character => (
+              <Card 
+              image={character.image}
+              alt={character.name}
+              name={character.name}
+              />
+              ))}
             </div>
         </div>
       </div>
