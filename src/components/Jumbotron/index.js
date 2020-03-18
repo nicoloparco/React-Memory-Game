@@ -1,6 +1,6 @@
 import React from "react";
 
-function Jumbotron() {
+function Jumbotron(props) {
   return (
     <div className="container mt-3">
       <div className="jumbotron jumbotron-fluid bg-dark text-light rounded">
@@ -22,7 +22,7 @@ function Jumbotron() {
             <h5>
               Click on an image to earn points but don't click the same image twice
             </h5>
-            <h5 id="currentScore" className="font-weight-bold">Current Score: 0</h5>
+            <h5 id="currentScore" className="font-weight-bold">Current Score: {props.currentScore}</h5>
           </div>
           <div className="col-md-4 my-3">
             <img

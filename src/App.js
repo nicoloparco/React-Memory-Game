@@ -99,7 +99,9 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
-        <Jumbotron />
+        <Jumbotron 
+        currentScore={this.state.currentScore}
+        />
         <div className="container-fluid">
             <div className="row" style={shake}>
               {this.state.characters.map(character => (
