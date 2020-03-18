@@ -101,6 +101,7 @@ class App extends Component {
         <Navbar />
         <Jumbotron 
         currentScore={this.state.currentScore}
+        message={this.state.clickMessage}
         />
         <div className="container-fluid">
             <div className="row" style={shake}>
