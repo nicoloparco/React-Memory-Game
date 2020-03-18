@@ -42,7 +42,7 @@ class App extends Component {
       animation: "shake .5s .0125s"
     }
     currentScore = 0;
-    clickMessage = "Game Over, You Lose"
+    clickMessage = "You Lose, Click to Play Again"
     characters.map((character, i) => {
       return characters[i].clicked = false;
     })

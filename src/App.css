@@ -1,6 +1,7 @@
 .jumbotron {
   padding: 4px 8px
 }
+
 .jumbotronImg {
   height: 100%;
   width: 100%
@@ -9,3 +10,9 @@
 #currentScore{ 
   color: #a0aa11
 }
+
+.img-card-top {
+  height: 250px;
+  padding: 0px
+}
+

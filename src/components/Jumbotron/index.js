@@ -3,12 +3,12 @@ import React from "react";
 function Jumbotron(props) {
   return (
     <div className="container mt-3">
-      <div className="jumbotron jumbotron-fluid bg-dark text-light rounded">
+      <div className="jumbotron jumbotron-fluid bg-dark text-light rounded shadow-lg">
         <div className="row d-flex mx-auto">
           <div className="col-md-4 my-3">
             <img
               className="rounded mx-auto shadow-lg jumbotronImg"
-              src="./images/Season7.jpg"
+              src="https://pbs.twimg.com/profile_images/849164156724854784/1kTsCMWL_400x400.jpg"
               alt="Sunny Logo"
             ></img>
           </div>
@@ -29,7 +29,7 @@ function Jumbotron(props) {
           <div className="col-md-4 my-3">
             <img
               className="rounded shadow-lg jumbotronImg"
-              src="./images/Season13.jpg"
+              src="https://worldz.us/WORLDZReport/wp-content/uploads/2018/06/IMG_5749-1024x768.jpeg"
               alt="Sunny Logo"
             ></img>
           </div>
