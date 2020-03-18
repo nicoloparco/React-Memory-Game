@@ -18,20 +18,18 @@ class App extends Component {
     currentScore,
     clickMessage
   }
-
-  componentDidMount(){
-
-  }
   
   selectCharacter = id => {
     
     const characters = this.state.characters;
     const clickedMatch = characters.filter(character => character.id === id)
+    console.log(clickedMatch)
+   
 
-    if(clickedMatch[0].clicked){
+    if (clickedMatch[0].clicked){
       this.gameOver();
     } 
-    else if(currentScore < 13) {
+    else if (currentScore < 13) {
       this.continuePlay(clickedMatch)
     } 
     else {
@@ -103,10 +101,11 @@ class App extends Component {
         <Navbar />
         <Jumbotron />
         <div className="container-fluid">
-            <div className="row">
+            <div className="row" style={shake}>
               {this.state.characters.map(character => (
               <Card 
               key={character.id}
+              id={character.id}
               image={character.image}
               alt={character.name}
               name={character.name}
