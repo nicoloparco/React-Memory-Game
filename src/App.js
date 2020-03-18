@@ -7,7 +7,7 @@ import characters from "./cards.json"
 
 let currentScore = 0;
 let topScore = 0;
-let clickMessage = "";
+let clickMessage = "Click an Image to Begin";
 let shake;
 
 class App extends Component {
@@ -29,7 +29,7 @@ class App extends Component {
     if (clickedMatch[0].clicked){
       this.gameOver();
     } 
-    else if (currentScore < 13) {
+    else if (currentScore < 10) {
       this.continuePlay(clickedMatch)
     } 
     else {
@@ -78,7 +78,7 @@ class App extends Component {
     clickedMatch[0].clicked = true;
     currentScore = 0;
     clickMessage = "Congrats, You've Won the Game!";
-    topScore = 13;
+    topScore = 11;
     this.setState({ topScore });
 
     characters.map((character, i) => {
@@ -100,6 +100,7 @@ class App extends Component {
       <div className="App">
         <Navbar />
         <Jumbotron 
+        topScore={this.state.topScore}
         currentScore={this.state.currentScore}
         message={this.state.clickMessage}
         />

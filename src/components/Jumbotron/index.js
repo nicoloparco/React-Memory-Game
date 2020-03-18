@@ -22,8 +22,9 @@ function Jumbotron(props) {
             <h5>
               Click on an image to earn points but don't click the same image twice
             </h5>
-            <h5 id="currentScore" className="font-weight-bold">Current Score: {props.currentScore}</h5>
-            <h5>{props.message}</h5>
+            <h5 id="topScore" className="font-weight-bold my-3">Top Score: {props.topScore}</h5>
+            <h5 id="currentScore" className="font-weight-bold my-3">Current Score: {props.currentScore}</h5>
+            <h5 id="clickMessage">{props.message}</h5>
           </div>
           <div className="col-md-4 my-3">
             <img
